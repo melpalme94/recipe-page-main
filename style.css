@@ -1,0 +1,124 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  background-color: var(--stone-100);
+  color: var(--stone-900);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Cartão central */
+main {
+  background-color: var(--white);
+  max-width: 375px; /* mobile */
+  margin: 0 auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+/* Imagem da receita */
+
+main img {
+  width: 100%;          /* ocupa toda a largura disponível */
+  height: auto;         /* mantém a proporção original */
+  border-radius: 12px;  /* arredonda os cantos */
+  display: block;       /* remove espaços extras */
+  margin-bottom: 1.5rem;
+}
+
+
+/* Cabeçalho */
+h1 {
+  font-family: 'Young Serif', serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--stone-600);
+  margin-bottom: 1.5rem;
+}
+
+/* Seções */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: 'Young Serif', serif;
+  font-size: 1.5rem;
+  color: var(--brown-800);
+  margin-bottom: 1rem;
+}
+
+/* Listas */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tabela de nutrição */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+td:first-child {
+  color: var(--stone-600);
+}
+
+td:last-child {
+  font-weight: 700;
+  color: var(--brown-800);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--stone-600);
+  margin-top: 2rem;
+}
+
+/* Responsividade */
+
+@media (min-width: 768px) {
+  main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  main img {
+    border-radius: 12px; /* mantém arredondado mesmo em telas grandes */
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    max-width: 800px;
+  }
+}
